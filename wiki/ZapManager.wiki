@@ -1,0 +1,13 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Use ZapManager to compare name, size, and hash of files in a directory to a database in csv format (text file, comma delimited). Databases can be created from your own directories and saved to disk, or loaded from an external file. These databases can then be compared to the directory at a later date to check for missing files, altered names, and file corruption/alteration via sha-256 hashes. This is useful for keeping an inventory of files for backup and restore purposes, and for sharing across a network or the internet. 
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
