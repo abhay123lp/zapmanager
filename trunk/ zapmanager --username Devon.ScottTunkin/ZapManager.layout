@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="ZapManagerApp.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="706" topLine="11" />
+	</File>
+	<File name="ZapManagerApp.h" open="0" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="ZapManagerData.cpp" open="1" top="1" tabpos="5">
+		<Cursor position="2306" topLine="70" />
+	</File>
+	<File name="ZapManagerData.h" open="1" top="0" tabpos="4">
+		<Cursor position="697" topLine="15" />
+	</File>
+	<File name="ZapManagerMain.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="14561" topLine="344" />
+	</File>
+	<File name="ZapManagerMain.h" open="1" top="0" tabpos="2">
+		<Cursor position="2562" topLine="22" />
+	</File>
+	<File name="resource.rc" open="0" top="0" tabpos="7">
+		<Cursor position="78" topLine="0" />
+	</File>
+	<File name="wx_pch.h" open="0" top="0" tabpos="6">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="wxsmith\ZapManagerframe.wxs" open="1" top="0" tabpos="7">
+		<Cursor position="92" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>
