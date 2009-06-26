@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="ZapManagerFrame">
+		<title>VERSION</title>
+		<size>-1,-1</size>
+		<extra_code>&#x0A;wxIconBundle icons;&#x0A;icons.AddIcon( wxIcon( &quot;aaaa&quot;, wxBITMAP__TYPE__ICO__RESOURCE ) );&#x0A;SetIcons( icons );&#x0A;&#x0A;SetStatusBarPane( -1 );</extra_code>
+		<id_arg>0</id_arg>
+		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+			<object class="sizeritem">
+				<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+					<minsize>-1,-1</minsize>
+					<object class="wxBoxSizer" variable="BoxSizer2" member="no">
+						<orient>wxVERTICAL</orient>
+						<object class="sizeritem">
+							<object class="wxBoxSizer" variable="BoxSizer3" member="no">
+								<object class="sizeritem">
+									<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+										<label>Target Folder:</label>
+										<size>72,18</size>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+								</object>
+							</object>
+							<flag>wxEXPAND|wxALIGN_TOP|wxALIGN_CENTER_HORIZONTAL</flag>
+						</object>
+						<object class="sizeritem">
+							<object class="wxPanel" name="ID_PANEL2" variable="Panel2" member="yes">
+								<size>-1,2</size>
+							</object>
+							<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						</object>
+						<object class="sizeritem">
+							<object class="wxGrid" name="ID_GRID1" variable="Grid1" member="yes">
+								<cols>3</cols>
+								<readonly>1</readonly>
+								<defaultcolsize>150</defaultcolsize>
+								<labelfont>
+									<style>normal</style>
+									<weight>normal</weight>
+									<underlined>0</underlined>
+									<family>modern</family>
+									<face>MS Sans Serif,System</face>
+								</labelfont>
+								<extra_code>Grid1-&gt;SetTable(&amp;my__database, false, wxGrid::wxGridSelectRows);&#x0A;Grid1-&gt;SetRowLabelSize(0);&#x0A;Grid1-&gt;SetColLabelSize(20);&#x0A;Grid1-&gt;EnableDragGridSize(false);&#x0A;Grid1-&gt;SetCellHighlightPenWidth(0);&#x0A;</extra_code>
+								<style>wxSTATIC_BORDER|wxCLIP_CHILDREN</style>
+							</object>
+							<flag>wxEXPAND|wxALIGN_TOP|wxALIGN_CENTER_HORIZONTAL</flag>
+							<option>2</option>
+						</object>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<option>1</option>
+			</object>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no">
+			<object class="wxMenu" variable="Menu1" member="no">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="idMenuOpen" variable="MenuItem3" member="yes">
+					<label>&amp;Open Database...</label>
+					<handler function="OnOpenData" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="idMenuClose" variable="MenuItem4" member="yes">
+					<label>&amp;Close Database</label>
+					<enabled>0</enabled>
+					<handler function="OnCloseData" entry="EVT_MENU" />
+				</object>
+				<object class="separator" />
+				<object class="wxMenu" name="idMenuCreate" variable="MenuItem5" member="yes">
+					<label>Cre&amp;ate Database</label>
+					<object class="wxMenuItem" name="idMenuFromFolder" variable="MenuItem6" member="yes">
+						<label>from &amp;Target Folder Contents...</label>
+						<enabled>0</enabled>
+						<handler function="OnCreateData" entry="EVT_MENU" />
+					</object>
+					<object class="wxMenuItem" name="idMenuFromUnfound" variable="MenuItem7" member="yes">
+						<label>from &amp;Unfound Files...</label>
+						<enabled>0</enabled>
+						<handler function="on_create_from_unfound" entry="EVT_MENU" />
+					</object>
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu3" member="yes">
+				<label>&amp;Edit</label>
+				<object class="wxMenu" name="idMenuCp" variable="MenuItem8" member="yes">
+					<label>&amp;Copy</label>
+					<object class="wxMenuItem" name="idMenuCpSel" variable="MenuItem9" member="yes">
+						<label>&amp;Selected Found Files</label>
+					</object>
+					<object class="wxMenuItem" name="idMenuCpAll" variable="MenuItem10" member="yes">
+						<label>&amp;All Found Files</label>
+					</object>
+				</object>
+				<object class="wxMenu" name="idMenuRename" variable="MenuItem11" member="yes">
+					<label>&amp;Rename</label>
+					<object class="wxMenuItem" name="idMenuRnSel" variable="MenuItem12" member="yes">
+						<label>&amp;Selected Found Files</label>
+						<handler function="on_rename_selected" entry="EVT_MENU" />
+					</object>
+					<object class="wxMenuItem" name="idMenuRnAll" variable="MenuItem13" member="yes">
+						<label>&amp;All Found Files</label>
+						<handler function="on_rename_found" entry="EVT_MENU" />
+					</object>
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="no">
+				<label>&amp;Help</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
+					<label>&amp;About</label>
+					<handler function="on_about" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR" variable="status_bar" member="yes">
+			<fields>1</fields>
+			<widths>-10</widths>
+			<styles>wxSB_NORMAL</styles>
+			<exstyle>wxWS_EX_BLOCK_EVENTS</exstyle>
+		</object>
+		<object class="wxFileDialog" variable="OpenCSVDialog" member="yes">
+			<message>Select file</message>
+			<wildcard>Comma separated values (CSV) file (*.csv;*.txt)|*.csv;*.txt</wildcard>
+			<style>wxFD_DEFAULT_STYLE|wxFD_OPEN|wxFD_FILE_MUST_EXIST|wxFD_CHANGE_DIR</style>
+		</object>
+		<object class="wxFileDialog" variable="SaveCSVDialog" member="yes">
+			<message>Select file</message>
+			<wildcard>Comma separated values (CSV) file (*.csv)|*.csv</wildcard>
+			<style>wxFD_SAVE|wxFD_OVERWRITE_PROMPT|wxFD_CHANGE_DIR</style>
+		</object>
+	</object>
+</wxsmith>
