@@ -1,3 +1,0 @@
-ICON16 BITMAP "chip16x16.bmp"
-aaaa ICON "ZapChip.ico"
-#include "wx/msw/wx.rc"
