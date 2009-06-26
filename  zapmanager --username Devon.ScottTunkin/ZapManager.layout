@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="Database.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="2558" topLine="72" />
+	</File>
+	<File name="Database.h" open="1" top="0" tabpos="4">
+		<Cursor position="775" topLine="0" />
+	</File>
+	<File name="DelimParser.cpp" open="0" top="0" tabpos="12">
+		<Cursor position="582" topLine="0" />
+	</File>
+	<File name="FileAttributes.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="51" topLine="0" />
+	</File>
+	<File name="FileAttributes.h" open="1" top="0" tabpos="8">
+		<Cursor position="832" topLine="4" />
+	</File>
+	<File name="FileKeys.cpp" open="0" top="0" tabpos="10">
+		<Cursor position="219" topLine="0" />
+	</File>
+	<File name="FileKeys.h" open="0" top="0" tabpos="11">
+		<Cursor position="284" topLine="0" />
+	</File>
+	<File name="Target.cpp" open="1" top="1" tabpos="7">
+		<Cursor position="3086" topLine="85" />
+	</File>
+	<File name="Target.h" open="1" top="0" tabpos="6">
+		<Cursor position="1324" topLine="37" />
+	</File>
+	<File name="ZapManagerApp.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="706" topLine="12" />
+	</File>
+	<File name="ZapManagerApp.h" open="0" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="ZapManagerData.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="2459" topLine="71" />
+	</File>
+	<File name="ZapManagerData.h" open="0" top="0" tabpos="4">
+		<Cursor position="116" topLine="0" />
+	</File>
+	<File name="ZapManagerMain.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="15828" topLine="0" />
+	</File>
+	<File name="ZapManagerMain.h" open="1" top="0" tabpos="2">
+		<Cursor position="898" topLine="25" />
+	</File>
+	<File name="resource.rc" open="1" top="0" tabpos="11">
+		<Cursor position="23" topLine="0" />
+	</File>
+	<File name="wx_pch.h" open="0" top="0" tabpos="6">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="wxsmith\ZapManagerframe.wxs" open="0" top="0" tabpos="6">
+		<Cursor position="92" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>
